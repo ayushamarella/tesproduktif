@@ -1,0 +1,75 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package tesproduktif;
+import java.util.Scanner;
+/**
+ *
+ * @author USER
+ */
+public class Tesproduktif {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    Scanner input=new Scanner(System.in);
+        System.out.print("masukkan NIK: ");
+        String NIK=input.next();
+        System.out.print("masukkan Nama: ");
+        String Nama=input.next();
+        
+        
+        System.out.print("masukkan pilihan: (1 / 2 / 3): ");
+        String jatimpark_1_2_3;
+        String harga;
+        jatimpark_1_2_3=input.next();
+        int uang;
+        
+        switch (jatimpark_1_2_3){
+            case "1" :
+            int harga_tiket=120000;
+            System.out.println("harga tiket 120.000");
+            System.out.print("masukkan uang anda: ");
+
+        uang = input.nextInt();
+        if (uang>=harga_tiket){
+        System.out.println("uang kembalian anda: "+(uang-harga_tiket));
+        } else {
+            System.out.print("uang anda kurang");
+    }
+            break;
+            case "2" :
+                harga_tiket=150000;
+                System.out.println("harga tiket 150.000");
+                System.out.print("masukkan uang anda: ");
+        uang = input.nextInt();
+        if (uang>=harga_tiket){
+           int total=uang-harga_tiket;
+        System.out.println("uang kembalian anda: "+(total));
+        } else {
+            System.out.println("uang anda kurang");
+    }
+                  break;
+            case "3" :
+                harga_tiket=100000;
+                System.out.println("harga tiket 100.000");
+                System.out.println("masukkan uang anda: ");
+        uang = input.nextInt();
+        if (uang>=harga_tiket){
+        System.out.println("uang kembalian anda: "+(uang-harga_tiket));
+        } else {
+            System.out.println("uang anda kurang");
+    }
+                break;
+        }
+         
+        
+        
+        
+        
+            
+    }
+    
+}
